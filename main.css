@@ -1,5 +1,323 @@
-@import url("pad");
 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 20px;
+}
+
+:root {
+  --main-color:red;
+}
+
+.page {
+  margin: auto auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+@-webkit-key-frames fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-key-frames fade-on {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-on {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-on {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.circle-100 {
+  width: 1;
+  height: 1;
+}
+
+.circle-200 {
+  width: 102;
+  height: 102;
+}
+
+.circle-300 {
+  width: 203;
+  height: 203;
+}
+
+.circle-400 {
+  width: 304;
+  height: 304;
+}
+
+.circle-500 {
+  width: 405;
+  height: 405;
+}
+
+.circle-600 {
+  width: 506;
+  height: 506;
+}
+
+.circle-700 {
+  width: 607;
+  height: 607;
+}
+
+.circle-800 {
+  width: 708;
+  height: 708;
+}
+
+.circle-900 {
+  width: 809;
+  height: 809;
+}
+
+.circle-1000 {
+  width: 910;
+  height: 910;
+}
+
+.1 {
+  width: 8.33333%;
+}
+
+.2 {
+  width: 16.66667%;
+}
+
+.3 {
+  width: 25%;
+}
+
+.4 {
+  width: 33.33333%;
+}
+
+.5 {
+  width: 41.66667%;
+}
+
+.6 {
+  width: 50%;
+}
+
+.7 {
+  width: 58.33333%;
+}
+
+.8 {
+  width: 66.66667%;
+}
+
+.9 {
+  width: 75%;
+}
+
+.10 {
+  width: 83.33333%;
+}
+
+.11 {
+  width: 91.66667%;
+}
+
+.12 {
+  width: 100%;
+}
+
+.red-them .product {
+  color: white;
+  border-bottom: red;
+}
+
+.red-them .product .title {
+  background-color: red;
+  font-weight: bold;
+}
+
+.blue-them .product {
+  color: white;
+  border-bottom: blue;
+}
+
+.blue-them .product .title {
+  background-color: blue;
+  font-weight: bold;
+}
+
+.green-them .product {
+  color: white;
+  border-bottom: green;
+}
+
+.green-them .product .title {
+  background-color: green;
+  font-weight: bold;
+}
+
+.facebook {
+  background-color: blue;
+}
+
+.facebook::before {
+  content: "facebook";
+}
+
+.youtube {
+  background-color: red;
+}
+
+.youtube::before {
+  content: "youtube";
+}
+
+.google {
+  background-color: white;
+}
+
+.google::before {
+  content: "google";
+}
+
+.one {
+  font-size: 20px;
+  background-color: red;
+}
+
+.two {
+  font-size: 20px;
+  background-color: blue;
+}
+
+.three {
+  font-size: 20px;
+  background-color: green;
+}
+
+.first {
+  background-color: blue;
+}
+
+.foot {
+  background-color: red;
+}
+
+.copy {
+  background-color: blue;
+}
+
+h1 {
+  color: white;
+  background-color: black;
+}
+
+.parent {
+  font-size: 50px;
+}
+
+.parent .child {
+  font-size: 30px;
+}
+
+.parent .child .grandchild {
+  font-size: 20px;
+}
+
+.parant-one,
+.parant-two {
+  padding: 20px;
+  color: red;
+}
+
+.box {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.page {
+  background-color: black;
+  color: aqua;
+}
+
+.ads, .condtion {
+  font-size: large;
+  color: red;
+}
+
+.ads {
+  padding: 10px;
+}
+
+.condtion {
+  margin-top: 20px;
+  background-color: green;
+  border-radius: 10px;
+}
+
+.ad-elzero {
+  font-size: 20px;
+  background-image: url("image/elzero.png");
+  left: 0;
+}
+
+.ad-falcon-unique-id {
+  font-size: 20px;
+  background-image: url("image/falcon.png");
+  left: 0;
+}
+
+.element {
+  width: 200px;
+  height: 100px;
+  top: 350px;
 }
 /*# sourceMappingURL=main.css.map */

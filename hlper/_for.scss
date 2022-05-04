@@ -1,0 +1,17 @@
+$dimintion:0;
+@for $i from 1 through 10 {
+    .circle-#{$dimintion + 100}
+    {
+     width:$dimintion + $i;
+     height:$dimintion + $i;
+    }
+    $dimintion:$dimintion + 100;
+}
+
+$gird_cols:12;
+
+@for $i from 1 through $gird_cols {
+    .#{$i}{
+        width: percentage($i/$gird_cols);
+    }
+}

@@ -1,4 +1,106 @@
-@import 'pad.scss';
-*{
-    padding: 20px;
+//import global rolles
+@import './sass/layout/pages/Global_Rolles' ;
+@import './sass/variables/color';
+@import './hlper/mixing';
+@import './hlper/for';
+@import './hlper/each_map';
+@import './hlper/function';
+//global vareble
+.first {
+    background-color: $main;
+
+}
+.foot {
+    // local varable
+    background-color: $alt;
+}
+.copy {
+    // to overide the the global varaebel
+    $back-colorr: white !global;
+    background-color: $main;
+}
+h1{
+    color: white;
+    background-color: $new;
+}
+.parent{
+    font-size: 50px;
+.child{
+    font-size: 30px;
+    .grandchild{
+        font-size: 20px;
+    }
+}
+}
+
+.parant-one,
+ .parant-two{
+       padding: 20px;
+        color:red;
+    }
+
+
+    .box{
+        font: {
+            size:20px;
+            weight:bold;
+        }
+        padding: 10px;
+        margin: auto{
+            top:10px;
+            bottom: 10px;
+        }
+    }
+     $them:'light';
+      .page {
+        @if($them=='dark'){
+            background-color: aqua;
+            color: black;
+         }@else{
+            background-color: black;
+            color: aqua;
+          }   
+        }
+    %main-box {
+       
+        font-size: large;
+        color: red;
+    }
+    
+    .ads{
+        @extend %main-box;
+        padding: 10px;
+    }
+    $round:true;
+    .condtion {
+        margin-top: 20px;
+        @extend %main-box;
+        background-color: green;
+        border-radius: if($round,10px,null);
+
+    }
+
+    $company:'elzero';
+    $postion:'left';
+
+    .ad-#{$company}{
+        font-size: 20px;
+        background-image: url('image/#{$company}.png');// her we use the value
+        #{$postion}:0; //her we use the property
+    }
+    $company:'falcon';
+    $postion:'left';
+
+    
+    .ad-#{$company}-#{unique-id}{
+        font-size: 20px;
+        background-image: url('image/#{$company}.png');// her we use the value
+         #{$postion}:0; //her we use the property
+     }
+     
+ $width:200px;
+.element{
+width: $width;
+height: half(200px);
+top: culculate(200px,100px,50px);
 }

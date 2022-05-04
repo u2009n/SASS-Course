@@ -1,0 +1,37 @@
+$themes:red,blue,green;
+
+@each $them in $themes {
+    .#{$them}-them{
+        .product{
+            color: white;
+            border-bottom: $them;
+            .title{
+                background-color: $them;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+$socials:('facebook':blue,
+          'youtube':red,
+          'google':white );
+
+
+     @each $name,$color in $socials {
+         .#{$name}{
+             background-color: $color;
+             &::before{
+                content: $name;
+            }
+         }
+     }     
+$classes:'one' 20px red,'two' 20px blue,'three' 20px green;
+
+@each $name,$font,$color in $classes {
+    .#{$name}{
+        font-size: $font;
+        background-color: $color;
+    }
+}

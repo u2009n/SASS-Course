@@ -1,0 +1,12 @@
+@function half($size){
+   $size:($size/2);
+   @return $size;
+}
+
+@function culculate($cals...){
+    $total:0;
+    @each $cal in $cals {
+        $total:$total+$cal;
+    }
+@return $total;
+}

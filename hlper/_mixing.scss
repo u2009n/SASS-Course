@@ -1,0 +1,42 @@
+@mixin circle-100($dimintion){
+ border-radius: 50%;
+ width: $dimintion;
+ height: $dimintion;
+}
+@mixin pinting($font) {
+    font-size: $font;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    
+}
+.page {
+    margin: auto auto;
+    @include circle-100(200px);
+    @include pinting(30px);
+      }
+
+      @mixin keyF($anim-name){
+         @-webkit-key-frames#{$anim-name} {
+           @content;  
+         }
+        @keyframes #{$anim-name}{
+            @content;
+        } 
+      }
+
+      @include keyF(fade-in){
+        from {
+            opacity:0;
+       }
+       to{
+           opacity: 1;
+       }
+      }
+      @include keyF(fade-on){
+        from {
+            opacity:0;
+       }
+       to{
+           opacity: 1;
+       }
+      }
